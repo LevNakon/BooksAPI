@@ -6,6 +6,10 @@ plugins:
 custom:
   tableName: 'books-table-${self:provider.stage}'
 
+package:
+  include:
+    - api/**
+
 provider:
   name: aws
   runtime: nodejs12.x
